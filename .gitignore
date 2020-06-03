@@ -1,8 +1,8 @@
 HELP.md
 target/
 .mvn/
-.cmd
-mvnw
+*.cmd
+mvnw*
 
 ### STS ###
 .apt_generated
