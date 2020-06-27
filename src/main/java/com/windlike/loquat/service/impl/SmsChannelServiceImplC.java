@@ -3,7 +3,7 @@ package com.windlike.loquat.service.impl;
 import com.windlike.loquat.service.SmsChannelService;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("CHANNEL_C") // channelType
 public class SmsChannelServiceImplC implements SmsChannelService {
     @Override
     public void send(String phoneNo, String content) {

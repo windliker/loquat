@@ -3,7 +3,7 @@ package com.windlike.loquat.service.impl;
 import com.windlike.loquat.service.SmsChannelService;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("CHANNEL_A") // channelType
 public class SmsChannelServiceImplA implements SmsChannelService {
     public void send(String phoneNo, String content) {
         System.out.println("通过短信渠道A发送短信");
