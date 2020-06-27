@@ -1,7 +1,6 @@
 package com.windlike.loquat.server.a01;
 
 import com.windlike.loquat.util.BeanTool;
-import org.springframework.stereotype.Component;
 
 import java.util.Map;
 

@@ -2,12 +2,12 @@ package com.windlike.loquat.server.a01.biz;
 
 import com.windlike.loquat.server.a01.BlackLstRcvAbstractHandler;
 import com.windlike.loquat.server.a01.BlackLstRcvHandlerType;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Component
+@Service
 @BlackLstRcvHandlerType("Ali20200602") // sysName
 public class AliBlackLstRcvHandler extends BlackLstRcvAbstractHandler {
     @Override
