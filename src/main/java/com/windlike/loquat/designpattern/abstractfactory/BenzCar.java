@@ -1,4 +1,8 @@
 package com.windlike.loquat.designpattern.abstractfactory;
 
-public class BenzCar {
+public interface BenzCar {
+
+    // 加汽油
+    void gasUp();
 }
+

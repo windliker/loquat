@@ -1,4 +1,5 @@
 package com.windlike.loquat.designpattern.adapter;
 
-public class LightningInterface {
+public interface LightningInterface {
+    void chargeWithLightning();
 }

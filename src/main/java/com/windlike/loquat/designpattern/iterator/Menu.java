@@ -1,4 +1,8 @@
 package com.windlike.loquat.designpattern.iterator;
 
-public class Menu {
+public interface Menu {
+
+    void add(String name);
+
+    Iterator getIterator();
 }

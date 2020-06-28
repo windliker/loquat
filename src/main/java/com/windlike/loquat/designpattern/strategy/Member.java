@@ -1,4 +1,8 @@
 package com.windlike.loquat.designpattern.strategy;
 
-public class Member {
+import java.math.BigDecimal;
+
+public interface Member {
+
+    BigDecimal calPrice(BigDecimal bookPrice);
 }
