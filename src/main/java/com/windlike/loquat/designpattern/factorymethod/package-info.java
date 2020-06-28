@@ -1,0 +1,1 @@
+package com.windlike.loquat.designpattern.factorymethod;
