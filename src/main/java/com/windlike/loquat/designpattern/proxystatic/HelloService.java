@@ -1,4 +1,4 @@
-package com.windlike.loquat.designpattern.staticproxy;
+package com.windlike.loquat.designpattern.proxystatic;
 
 public interface HelloService {
     void say();

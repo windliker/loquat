@@ -12,29 +12,25 @@ public class MyInvocationHandler implements InvocationHandler {
     private Object target;
 
     public MyInvocationHandler(Object target) {
-
-        super();
         this.target = target;
-
     }
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        PerformanceMonior.begin(target.getClass().getName()+"."+method.getName());
+//        PerformanceMonior.begin(target.getClass().getName()+"."+method.getName());
         //System.out.println("-----------------begin "+method.getName()+"-----------------");
         Object result = method.invoke(target, args);
         //System.out.println("-----------------end "+method.getName()+"-----------------");
-        PerformanceMonior.end();
+//        PerformanceMonior.end();
         return result;
     }
 
     public Object getProxy(){
-
-        return Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(), target.getClass().getInterfaces(), this);
+        return Proxy.newProxyInstance(
+                Thread.currentThread().getContextClassLoader(), target.getClass().getInterfaces(), this);
     }
 
     public static void main(String[] args) {
-
         HelloService service = new HelloServiceImpl();
         MyInvocationHandler handler = new MyInvocationHandler(service);
         HelloService proxy = (HelloService) handler.getProxy();
@@ -42,5 +38,3 @@ public class MyInvocationHandler implements InvocationHandler {
     }
 
 }
-
-
